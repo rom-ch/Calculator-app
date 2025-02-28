@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-spartan: "League Spartan", sans-serif;
+
+  --color-main-background: var(--theme-color-main-background);
+  --color-keypad-background: var(--theme-color-keypad-background);
+  --color-screen-background: var(--theme-color-screen-background);
+
+  --color-special-key: var(--theme-color-special-key);
+  --color-special-key-shadow: var(--theme-color-special-key-shadow);
+  --color-special-key-active: var(--theme-color-special-key-active);
+
+  --color-equal-key: var(--theme-color-equal-key);
+  --color-equal-key-shadow: var(--theme-color-equal-key-shadow);
+  --color-equal-key-active: var(--theme-color-equal-key-active);
+
+  --color-key: var(--theme-color-key);
+  --color-key-shadow: var(--theme-color-key-shadow);
+  --color-key-active: var(--theme-color-key-active);
+
+  --color-text-key: var(--theme-color-text-key);
+  --color-text: var(--theme-color-text);
+  --color-text-screen: var(--theme-color-text-screen);
+  --color-text-special-key: var(--theme-color-text-special-key);
+  --color-text-equal-key: var(--theme-color-text-equal-key);
+}
+
+@layer base {
+  :root {
+    --theme-color-main-background: hsl(222, 26%, 31%);
+    --theme-color-keypad-background: hsl(223, 31%, 20%);
+    --theme-color-screen-background: hsl(224, 36%, 15%);
+
+    --theme-color-special-key: hsl(225, 21%, 49%);
+    --theme-color-special-key-shadow: hsl(224, 28%, 35%);
+    --theme-color-special-key-active: hsl(224, 51%, 76%);
+
+    --theme-color-equal-key: hsl(6, 63%, 50%);
+    --theme-color-equal-key-shadow: hsl(6, 70%, 34%);
+    --theme-color-equal-key-active: hsl(6, 93%, 67%);
+
+    --theme-color-key: hsl(30, 25%, 89%);
+    --theme-color-key-shadow: hsl(28, 16%, 65%);
+    --theme-color-key-active: hsl(0, 0%, 100%);
+
+    --theme-color-text-key: hsl(221, 14%, 31%);
+    --theme-color-text-screen: hsl(0, 0%, 100%);
+    --theme-color-text: hsl(0, 0%, 100%);
+    --theme-color-text-special-key: hsl(0, 0%, 100%);
+    --theme-color-text-equal-key: hsl(0, 0%, 100%);
+  }
+
+  html[data-theme="light"] {
+    --theme-color-main-background: hsl(0, 0%, 90%);
+    --theme-color-keypad-background: hsl(0, 5%, 81%);
+    --theme-color-screen-background: hsl(0, 0%, 93%);
+
+    --theme-color-special-key: hsl(185, 42%, 37%);
+    --theme-color-special-key-shadow: hsl(185, 58%, 25%);
+    --theme-color-special-key-active: hsl(185, 41%, 56%);
+
+    --theme-color-equal-key: hsl(25, 98%, 40%);
+    --theme-color-equal-key-shadow: hsl(25, 99%, 27%);
+    --theme-color-equal-key-active: hsl(25, 100%, 61%);
+
+    --theme-color-key: hsl(45, 7%, 89%);
+    --theme-color-key-shadow: hsl(35, 11%, 61%);
+    --theme-color-key-active: hsl(0, 0%, 100%);
+
+    --theme-color-text-key: hsl(60, 10%, 19%);
+    --theme-color-text-screen: hsl(60, 10%, 19%);
+    --theme-color-text: hsl(60, 10%, 19%);
+    --theme-color-text-special-key: hsl(0, 0%, 100%);
+    --theme-color-text-equal-key: hsl(0, 0%, 100%);
+  }
+
+  html[data-theme="neon"] {
+    --theme-color-main-background: hsl(268, 75%, 9%);
+    --theme-color-keypad-background: hsl(268, 71%, 12%);
+    --theme-color-screen-background: hsl(268, 71%, 12%);
+
+    --theme-color-special-key: hsl(281, 89%, 26%);
+    --theme-color-special-key-shadow: hsl(285, 91%, 52%);
+    --theme-color-special-key-active: hsl(280, 56%, 44%);
+
+    --theme-color-equal-key: hsl(176, 100%, 44%);
+    --theme-color-equal-key-shadow: hsl(177, 92%, 70%);
+    --theme-color-equal-key-active: hsl(177, 100%, 79%);
+
+    --theme-color-key: hsl(268, 47%, 21%);
+    --theme-color-key-shadow: hsl(290, 70%, 36%);
+    --theme-color-key-active: hsl(268, 54%, 44%);
+
+    --theme-color-text-key: hsl(52, 100%, 62%);
+    --theme-color-text-screen: hsl(52, 100%, 62%);
+    --theme-color-text: hsl(52, 100%, 62%);
+    --theme-color-text-special-key: hsl(0, 0%, 100%);
+    --theme-color-text-equal-key: hsl(0, 0%, 0%);
+  }
+}
